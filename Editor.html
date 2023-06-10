@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Editor</title>
+    <link rel="stylesheet" href="Style2.css">
+</head>
+<body>
+<div class="content">
+    <input type="text" id="visible-input" value=""/>
+    <input type="button" id="visible-button" value="Copy">
+    <button type="button" onclick="generateText()">Generate</button>
+</div>
+<script src="Editor.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.6/p5.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.6/addons/p5.dom.js"></script>
+<button type="button" onclick="changeCourser(0)">Obstacle1</button>
+<button type="button" onclick="changeCourser(1)">Obstacle2</button>
+<button type="button" onclick="changeCourser(8)">Obstacle3</button>
+<button type="button" onclick="changeCourser(2)">Obstacle4</button>
+<button type="button" onclick="changeCourser(3)">Obstacle5</button>
+<button type="button" onclick="changeCourser(9)">Obstacle6</button>
+<button type="button" onclick="changeCourser(10)">Obstacle7</button>
+<button type="button" onclick="changeCourser(4)">Obstacle8</button>
+<br>
+<button type="button" onclick="changeCourser(5)">Coin1</button>
+<button type="button" onclick="changeCourser(6)">Coin2</button>
+<button type="button" onclick="changeCourser(7)">Coin3</button>
+<br>
+<button type="button" onclick="changeCourser(11)">Enemy1</button>
+<button type="button" onclick="changeCourser(12)">Enemy2</button>
+<button type="button" onclick="changeCourser(13)">Enemy3</button>
+<button type="button" onclick="changeCourser(14)">Enemy5</button>
+<br>
+<button type="button" onclick="changeCourser(15)">Item</button>
+<button type="button" onclick="changeCourser(16)">Heart</button>
+<br>
+<button type="button" onclick="changeCourser(-1)">Align Hor</button>
+<button type="button" onclick="changeCourser(-2)">Align Ver</button>
+<button type="button" onclick="AlignVer()">Raster Ver</button>
+<button type="button" onclick="AlignHor()">Raster Hor</button>
+<button type="button" onclick="stopAlign()">Delete Alignr</button>
+<button type="button" onclick="toggleSnap()">toggle snap</button>
+<br>
+<button type="button" onclick="undo()">undo</button>
+<button type="button" onclick="redo()">redo</button>
+<button type="button" onclick="newLevel()">new</button>
+<button type="button" onclick="setChallengeGoal()">set goal</button>
+<p id="p1"></p>
+
+</body>
+</html>
